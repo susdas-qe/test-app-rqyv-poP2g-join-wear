@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-rgxx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-etuc-tenant/test-app-rqyv/devfile-sample-python-basic-rgxx@sha256:eb38bc4a25a38d12614c350144e3dc69e652264e28b7259ba0f7f62fa1fb3518
+        name: my-python
+        resources: {}
+status: {}
